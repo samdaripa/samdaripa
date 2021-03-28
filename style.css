@@ -1,0 +1,385 @@
+/* Top nav bar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+/* logo Part */
+.mainNav .logo {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.mainNav .logo span{
+    color: rgb(74, 207, 132);
+}
+
+/* Search part */
+.mainNav .search{
+    background: #E4E5E8;
+    border-radius: 20px;
+    width: 300px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 10px;
+}
+.mainNav .search i{
+    
+    color: rgb(34, 31, 31);
+}
+.mainNav .search input{
+    color: rgb(34, 31, 31);
+    border: none;    
+    background: none;
+    outline: none;
+    margin-left:5x ;
+}
+.mainNav .search input::placeholder{
+    font-size: .8rem;
+    color: rgb(34, 31, 31);
+}
+
+/* Create account part */
+.mainNav .create{
+    font-weight: 600;
+}
+.mainNav .create span{
+   color: rgb(95, 95, 238);
+}
+
+
+.mainHeader{
+    margin-top: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Bg.jpg");
+    height: 280px;
+    background-position: center center;
+        background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mainHeading{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+  }
+.mainHeading p{
+ font-size: 0.8rem;
+ color: rgb(226, 225, 225);
+}
+
+
+
+.mainBody{
+    width:1600px;
+    margin-top: 1rem;
+}
+.mainBody .postBody{
+
+}
+
+.active-bar{
+    color:black;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 2px solid#b8bbc2;
+}
+.inactive-bar{
+    color:  #b8bbc2;
+}
+.writeBtn{
+    color: black;
+    background: #d0d3d8 ;
+    font-size: .8rem;
+}
+.active{
+    font-size: .8rem;
+}
+.nav-item{
+    margin-right: 10px;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    position: relative;
+     top: -11px; 
+}
+.card{
+    margin-top: .8rem;
+}
+.card-img-top{
+    height:200px
+}
+.card-body div span{
+    font-weight: 600;
+    font-size: .8rem;
+}
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -15px;
+}
+.card-title h5{
+    font-size: 1rem;
+}
+.card-subtitle{
+    font-size: 0.9rem;
+    color: #87898f;
+    margin-top: 1rem;
+}
+.profile-img{
+   padding: 0;
+}
+.profile-section{
+    margin-top: 1rem;
+}
+.profile-name{
+    display: flex;
+    /* justify-content:space-between ; */
+    align-items: center;
+    padding: 0;
+    /* margin-right: 20px; */
+}
+.profile-name h6{
+    font-weight: bold;
+}
+.profile-name p{
+    font-weight: 600;
+    font-size: 0.8rem;
+    color:  #8c8d8f;
+    margin-left: 15rem;
+    display: flex;
+    align-items: center;
+}
+.profile-share{
+   color:  #8c8d8f;
+   position: relative;
+}
+.card-loc{
+margin-top: 1rem;
+}
+.card-loc span{
+    margin-right: 6rem;
+}
+.dropdown-toggle:empty::after {
+    display: none;
+}
+.card-title ul{
+    list-style: none;
+}
+.btn-card{
+    width:100%;
+    background: none;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    margin-top:1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 3px 0;
+    outline: none;
+}
+.btn-card:hover{
+   cursor: pointer;
+   background-color:#f5f0f0;
+}
+
+
+/* sidebar */
+.sidebar-body{
+    margin-top: 3rem;
+    margin-left:1.5rem ;
+    width: 223px;
+}
+.sidebar-body p i:nth-child(2){
+    margin-left: 6rem;
+
+}
+.sidebar-body .notice{
+    font-size: 0.7rem;
+    color:#d1cbcb;
+    margin-top: 1rem;
+}
+.sidebar-body .notice i{
+    font-size: 1rem;
+}
+.sidebar-body h6{
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+.sidebar-profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.btn-follow{
+    color: black;
+    border:none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    padding: 0.7px 18px;
+}
+.sidebar-more{
+    margin-left: 11rem;
+    margin-top: 2rem;
+}
+
+.btn-join{
+    background:none;
+    border:1px solid white;
+    border-radius: 7px;
+    padding:3px 7px;
+    color: white;
+    font-size: 0.8rem;
+
+}
+.mobile-btn{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 5%;
+    margin:0 15px;
+    /* display: none; */
+    visibility: hidden;
+    
+}
+
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    margin :0 60px 0 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+}
+.mobile-nav div a,.mobile-nav button{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+/* Responsive Web Design */
+@media only screen and (max-width: 768px){
+    .mainNav{
+        display: none;  
+    }
+    .mainHeader{
+        max-width: 768px;
+        margin:0px;
+        height:300px
+    }
+    .mainHeading{
+        
+        top: 70%;
+        left: 5%;
+      }
+      .mobile-btn{
+        visibility: visible;  
+    }
+    .sideBar{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .postBody .nav{
+        display: none;
+    }
+    .mobile-nav{
+        visibility: visible;
+    }
+   
+ .mainBody, .mainBody row, .postBody{
+      max-width:100%
+   }
+    .profile-name p{
+    margin-left: 10rem;
+    
+}
+.profile-img{
+    padding-left:10px ;
+    margin: 0 auto;
+}
+
+}
+
+@media only screen and (max-width: 576px){
+    .profile-name{
+        display: flex;
+        /* justify-content: left; */
+        margin-bottom: -15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .postBody{
+        margin: 0 auto;
+    }
+    .mainHeading h2{
+       font-size: 1.5rem; 
+      }
+    .mainHeading p{
+       font-size: .7rem; 
+      }
+      .profile-name p{
+          margin-left: 0;
+      }
+      .profile-share{
+          display: none;
+      }
+      .profile-share span{
+          display: none;
+      }
+      .card-title h5{
+        width:240px
+    }
+    .mobile-btn{
+        margin:0 0px;
+}
+.card-loc span {
+    margin-right: 0rem;
+    font-size: 0.5rem !important;
+}
+.card-loc{
+    padding: 0;
+    margin-top: 0.5rem;
+}
+    ::after, ::before {
+     box-sizing: border-box;
+     margin-left: 30px;
+ }
+ .profile-name p {
+    margin-left: 0 !important;
+}
+
+}
+
+@media only screen and (max-width: 360px){
+   .mainBody{
+       padding: 0;
+       margin: 0;
+   }
+   .mainHeader{
+    max-width: 400px;
+    margin:0px;
+    height:300px
+}
+.mobile-nav{
+    margin-top: 0.5rem;
+}
+
+
+    
+}
+
