@@ -82,9 +82,8 @@
     width:1600px;
     margin-top: 1rem;
 }
-.mainBody .postBody{
 
-}
+
 
 .active-bar{
     color:black;
@@ -141,40 +140,31 @@ hr{
 .profile-section{
     margin-top: 1rem;
 }
-.profile-name{
-    display: flex;
-    /* justify-content:space-between ; */
-    align-items: center;
-    padding: 0;
-    /* margin-right: 20px; */
-}
-.profile-name h6{
-    font-weight: bold;
-}
+
+
+
 .profile-name p{
-    font-weight: 600;
-    font-size: 0.8rem;
-    color:  #8c8d8f;
-    margin-left: 15rem;
-    display: flex;
-    align-items: center;
+    /* margin-top: -0.5rem; */
+    color: #717274;
+    font-size: 0.9rem;
 }
-.profile-share{
-   color:  #8c8d8f;
-   position: relative;
+
+.profile-share div{
+    background-color: rgb(221, 220, 220);
+    padding: 0.2rem 0.7rem;
+    border-radius: 5px;
 }
-.card-loc{
-margin-top: 1rem;
-}
-.card-loc span{
-    margin-right: 6rem;
-}
-.dropdown-toggle:empty::after {
+.profile-share span{
     display: none;
 }
+
+
+
 .card-title ul{
     list-style: none;
 }
+
+
 .btn-card{
     width:100%;
     background: none;
@@ -248,9 +238,8 @@ margin-top: 1rem;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 5%;
-    margin:0 15px;
-    /* display: none; */
+    top: 4%;
+    left:-2%;
     visibility: hidden;
     
 }
@@ -267,10 +256,17 @@ margin-top: 1rem;
     font-size: 0.8rem;
     font-weight: bold;
 }
-
+.dropdown-toggle::after {
+    display: none;
+}
 
 
 /* Responsive Web Design */
+@media only screen and (max-width: 1024px){
+    .sideBar{
+        display: none;
+    }
+}
 @media only screen and (max-width: 768px){
     .mainNav{
         display: none;  
@@ -288,9 +284,6 @@ margin-top: 1rem;
       .mobile-btn{
         visibility: visible;  
     }
-    .sideBar{
-        display: none;
-    }
     hr{
         display: none;
     }
@@ -304,21 +297,16 @@ margin-top: 1rem;
  .mainBody, .mainBody row, .postBody{
       max-width:100%
    }
-    .profile-name p{
-    margin-left: 10rem;
-    
-}
-.profile-img{
-    padding-left:10px ;
-    margin: 0 auto;
-}
+   .profile-name p {
+       margin-top: -0.5rem;
+   }
+   
 
 }
 
 @media only screen and (max-width: 576px){
     .profile-name{
         display: flex;
-        /* justify-content: left; */
         margin-bottom: -15px;
         flex-direction: column;
         align-items: flex-start;
@@ -333,13 +321,7 @@ margin-top: 1rem;
        font-size: .7rem; 
       }
       .profile-name p{
-          margin-left: 0;
-      }
-      .profile-share{
-          display: none;
-      }
-      .profile-share span{
-          display: none;
+          margin-left: -30px;
       }
       .card-title h5{
         width:240px
@@ -347,39 +329,15 @@ margin-top: 1rem;
     .mobile-btn{
         margin:0 0px;
 }
-.card-loc span {
-    margin-right: 0rem;
-    font-size: 0.5rem !important;
+.profile-share div{
+    background-color: white
 }
-.card-loc{
-    padding: 0;
-    margin-top: 0.5rem;
-}
+
     ::after, ::before {
      box-sizing: border-box;
      margin-left: 30px;
  }
- .profile-name p {
-    margin-left: 0 !important;
-}
-
-}
-
-@media only screen and (max-width: 360px){
-   .mainBody{
-       padding: 0;
-       margin: 0;
-   }
-   .mainHeader{
-    max-width: 400px;
-    margin:0px;
-    height:300px
-}
-.mobile-nav{
-    margin-top: 0.5rem;
 }
 
 
-    
-}
 
